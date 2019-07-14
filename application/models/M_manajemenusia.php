@@ -20,6 +20,28 @@ class M_manajemenusia extends CI_Model
 		return $hasil->result();
 	}
 
+	function getDataForGraph($gereja,$partsUsia,$partsStatus)
+	{
+		$hasil=$this->db->query("SELECT 
+			COUNT(usia) AS jumlah,
+			usia AS usia,
+			status_perkawinan AS status 
+		From 
+			jemaats 
+		WHERE 
+			gerejaid = $gereja
+			AND 
+			status = 'Hidup'
+			AND 
+			((status_perkawinan in ($partsStatus)) AND (usia in ($partsUsia)))
+				
+		GROUP BY 
+			usia
+		");
+		
+		return $hasil->result();
+	}
+
 	function getPDF($partsUsia,$partsStatus,$gereja)
 	{		
 		 $hasil=$this->db->query("SELECT a.Nama_Lengkap as NamaLengkap,a.alamat_tinggal as alamat,a.jenis_kelamin as gender,a.usia as usia,b.namagereja as namagereja, a.status_perkawinan as status_perkawinan from jemaats a Left join gereja b ON a.gerejaid = b.id WHERE a.gerejaid=$gereja and a.status = 'Hidup' and ((a.status_perkawinan in ($partsStatus)) AND (a.usia in ($partsUsia)))");

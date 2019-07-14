@@ -3,12 +3,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       	<h1>
- 			Grafik Pekerjaan
+ 			Grafik Usia
         <small></small>
       	</h1>
       	<ol class="breadcrumb">
         	<li><a href="#"><i class="fa fa-briefcase"></i> Fasilitas </a></li>
-        	<li class="active">Grafik Pekerjaan </li>
+        	<li class="active">Grafik Usia </li>
       	</ol>
     </section>
 
@@ -26,8 +26,9 @@
 </div>
 
 <script>
-	var column = <?= json_encode($column) ?>;
+	var columnUsia = <?= json_encode($columnUsia) ?>;
 	var gereja = <?= json_encode($gereja) ?>;
+	var columnStatus = <?= json_encode($columnStatus) ?>;
 </script>
 
 <script>
@@ -36,9 +37,10 @@ window.onload = function() {
 	var id = $('#gereja').val();
 	$.ajax({
 		type: "GET",
-		url: base_url + "Graph/Pekerjaan/data",
+		url: base_url + "Graph/Usia/data",
 		data: {
-			"column": column,
+			"columnUsia": columnUsia,
+			"columnStatus": columnStatus,
 			"gereja": gereja
 		},
 		dataType: "json",
@@ -60,8 +62,13 @@ window.onload = function() {
 			chart = new CanvasJS.Chart("chartContainer", {
 				animationEnabled: true,
 				title: {
-					text: "Grafik Pekerjaan Jemaat Gereja " + res.name
+					text: "Grafik usia Jemaat Gereja " + res.name
 				},
+				subtitles:[
+				{
+					text: res.listStatus	
+				}
+				],
 				data: [{
 					type: "pie",
 					startAngle: 240,

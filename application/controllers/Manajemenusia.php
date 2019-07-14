@@ -117,6 +117,20 @@ class Manajemenusia extends CI_Controller {
 			$writer->save('php://output');
 			exit;
 			 
+		}elseif ($this->input->post('hasil_id') == 'GRAPH') {
+			$columnUsia = $this->input->post('usia');
+			$columnStatus = $this->input->post('status');
+			$gereja = $this->input->post('gereja');
+			if ( ! is_array($columnUsia)) {
+				redirect('Manajemenusia');
+			}
+			
+			$arr = [
+				'columnUsia' => $columnUsia,
+				'columnStatus' => $columnStatus,
+				'gereja' => $gereja
+			];
+			redirect('Graph/Usia?' . http_build_query($arr));	
 		}
 		
 	}

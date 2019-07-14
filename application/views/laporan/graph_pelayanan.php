@@ -3,12 +3,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       	<h1>
- 			Grafik Pekerjaan
+ 			Grafik Pelayanan
         <small></small>
       	</h1>
       	<ol class="breadcrumb">
         	<li><a href="#"><i class="fa fa-briefcase"></i> Fasilitas </a></li>
-        	<li class="active">Grafik Pekerjaan </li>
+        	<li class="active">Grafik Pelayanan </li>
       	</ol>
     </section>
 
@@ -36,7 +36,7 @@ window.onload = function() {
 	var id = $('#gereja').val();
 	$.ajax({
 		type: "GET",
-		url: base_url + "Graph/Pekerjaan/data",
+		url: base_url + "Graph/Pelayanan/data",
 		data: {
 			"column": column,
 			"gereja": gereja
@@ -60,7 +60,7 @@ window.onload = function() {
 			chart = new CanvasJS.Chart("chartContainer", {
 				animationEnabled: true,
 				title: {
-					text: "Grafik Pekerjaan Jemaat Gereja " + res.name
+					text: "Grafik Pelayanan Jemaat Gereja " + res.name
 				},
 				data: [{
 					type: "pie",

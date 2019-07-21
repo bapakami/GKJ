@@ -219,8 +219,8 @@ $username = $i['nama_lengkap'];
                   <input id="NoInduk" type="text" name="NoInduk" class="form-control" placeholder="Nomor Induk" data-error="Lastname is required.">
                 </div>
                 <div class="col-md-4 ml-auto">
-                  <label for="form_lastname">No. KTP*</label>
-                  <input id="NoKtp" type="text" name="NoKtp" class="form-control" placeholder="Nomor KTP" data-error="Lastname is required.">
+                  <label for="form_lastname">NIK*</label>
+                  <input id="NoKtp" type="text" name="NoKtp" class="form-control" placeholder="Nomor Induk Karyawan" data-error="Lastname is required.">
                 </div>
                 <div class="col-md-4 ml-auto">
                   <label for="form_lastname">No. KK*</label>
@@ -316,8 +316,8 @@ $username = $i['nama_lengkap'];
                     <br>
                     <div class="row">
                       <div class="col-md-4">
-                        <label for="form_lastname">No Telp</label>
-                        <input id="NoTelp" type="text" name="NoTelp" class="form-control" placeholder="Nomor Telepon" data-error="Lastname is required.">
+                        <label for="form_lastname">No Handphone</label>
+                        <input id="NoTelp" type="text" name="NoTelp" class="form-control" placeholder="Nomor Handphone" data-error="Lastname is required.">
                       </div>
                       <div class="col-md-4 ml-auto">
                         <label for="form_lastname">No Telp Rumah</label>
@@ -509,8 +509,8 @@ $username = $i['nama_lengkap'];
               <br>
               <div class="row">
                 <div class="col-md-4">
-                  <label for="form_lastname">Pendeta</label>
-                  <input id="pdt_sidhi" type="text" name="pdt_sidhi" class="form-control" placeholder="Nama Pendeta">                               
+                  <label for="form_lastname">Pendeta Sidhi</label>
+                  <input id="pdt_sidhi" type="text" name="pdt_sidhi" class="form-control" placeholder="Pendeta Sidhi">                               
                 </div>
                 <div class="col-md-4 ml-auto">
                   <label for="form_lastname">Tempat Sidhi</label>

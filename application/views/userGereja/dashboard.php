@@ -34,7 +34,7 @@
                       <!-- <div class="x_panel"> -->
                         <div class="x_content">
                           <p class="text-muted font-13 m-b-30">
-                            <!-- Klasis Gunungkidul merupakan klasis yang terdiri dari 13 GKJ (Gereja Kristen Jawa) sehingga tergolong klasis yang besar dan luas area pelayanannya. -->
+                            <!-- . -->
                           </p>            
                         </div>
                       <!-- </div> -->

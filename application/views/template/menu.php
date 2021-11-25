@@ -3,9 +3,8 @@
 
 <header class="main-header">
     <a href="" class="logo">
-      <span class="logo-mini">GKJ</span>
-      <span class="logo-lg"><b>GKJ&nbsp;</b>Gunung Kidul</span>
-    </a>
+      <span class="logo-mini">GKP</span>
+    <span class="logo-lg"><b>Gereja Kristen Pasundan</b></span></a>
 
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -52,7 +51,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url();?>assets/img/logoGKJ.png" class="lazyload img-circle" alt="User Image">
+          <img src="<?php echo base_url();?>assets/img/logoGKJ1.png" class="lazyload img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?= $this->session->userdata('fullname')?></p>

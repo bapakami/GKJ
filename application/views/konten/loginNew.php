@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SI Jemaat Klasis GKJ GunungKidul </title>
+    <title>SI Jemaat Gereja Kristen Pasundan </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
@@ -34,8 +34,9 @@
             <div class="wrap-login100">
                 <div class="login100-form-title" style="background-image: url(assets/aset/images/gereja.png);">
                     <span class="login100-form-title-1">
-                        Login <br> <h5> GKJ Klasis Gunung Kidul</h>
-                    </span>
+                        Login <br> 
+                        <h5>
+                         Gereja Kristen Pasundan                   </span>
                 </div>
 
                 <form class="login100-form validate-form" onsubmit="return validateForm()" action="<?php echo base_url('Login/aksi_login')?>" method="post" enctype="multipart/form-data" role="form">

@@ -5,8 +5,8 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="dashboard_graph">
 
-             <h1>Klasis Gereja-gereja Kristen Jawa GunungKidul</h1><br>
-             <h4>Klasis GunungKidul merupakan klasis yang terdiri dari 13 GKJ (Gereja Kristen Jawa) sehingga klasis yang besar dan luas area pelayanannya. </h4>
+             <h1>Klasis Gereja-gereja Kristen Pasundan</h1><br>
+             <h4> </h4>
         <?php
              echo $encrypt;
              echo "<br />";
@@ -23,7 +23,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Klasis Gereja-gereja Kristen Jawa Gunungkidul</h3>
+                <h3>Klasis Gereja-gereja Pasundan</h3>
               </div>
 
              
@@ -35,9 +35,7 @@
               <div class="">
                 <!-- <div class="x_panel"> -->
                   <div class="x_content">
-                    <p class="text-muted font-13 m-b-30">
-                      Klasis Gunungkidul merupakan klasis yang terdiri dari 13 GKJ (Gereja Kristen Jawa) sehingga tergolong klasis yang besar dan luas area pelayanannya.
-                    </p>
+                    <p class="text-muted font-13 m-b-30">&nbsp;</p>
 
                
                

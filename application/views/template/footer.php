@@ -2,7 +2,7 @@
     <div class="pull-right hidden-xs">
       <!-- <b> user online</b>  -->
     </div>
-    <strong> Copyright &copy; <a href=""> 2019 TI UKSW dan GKJ Klasis GunungKidul </strong></a>. All rights reserved.
+    <strong> Copyright &copy; <a href=""> 2019 TI UKSW dan GKP </strong></a>. All rights reserved.
 </footer>
   </div>
 	
